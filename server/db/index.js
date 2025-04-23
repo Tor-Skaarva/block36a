@@ -1,8 +1,7 @@
 const { Pool } = require("pg");
 const db = new Pool({
   connectionString:
-    process.env.DATABASE_URL ||
-    "postgres://localhost:5432/34a-classroom_manager",
+    process.env.DATABASE_URL || "postgres://Torsk:wordpass@localhost:5432/CRM",
 });
 
 async function query(sql, params, callback) {
